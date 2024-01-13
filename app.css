@@ -1,0 +1,31 @@
+i .icon {
+    font-size: 2rem;
+    size: 30px;
+    /* transition: 0.4s ease-in-out; */
+  }
+  body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ozO2SN9EGydkQo4hxxoC5q3Gp8hvStZZLQ&usqp=CAU");
+    
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container.main {
+    padding-top: 10px;
+  }
+  div #indexbody {
+    padding-left: 40%;
+  }
+  .meta {
+    float: right;
+  }
+  h1 {
+    color: rgb(134, 177, 233);
+  }
+  #delete {
+    display: inline;
+  }

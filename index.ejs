@@ -1,0 +1,35 @@
+<%- include("partials/header")%>
+<div class="ui main text container">
+  <div class="ui huge header" style="font-family: Georgia, 'Times New Roman', Times, serif;text-align: center;color: rgb(234, 77, 77);font-size: 10cqb;">Blog App</div>
+  <div class="ui top attached segment">
+    <div class="ui divided items">
+      <% blogs.forEach(function(blog){ %>
+      <div class="item" style="display: flex; flex-wrap: wrap">
+       
+        <div class="content">
+          <a href="/blogs/<%= blog._id %>" class="ui huge header"
+            ><%=blog.title%></a
+          >
+        </div>
+        <div class="meta">
+          <span><%= blog.created.toDateString() %></span>
+        </div>
+        <div class="description">
+          <p><%- blog.body.substring(0,150)%> ...</p>
+        </div>
+
+        <div class="extra">
+          <a
+            class="ui floated secondary inverted button"
+            href="/blogs/<%= blog._id %>"
+            >Read More <i class="right chevron icon"></i
+          ></a>
+          
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer")%>

@@ -1,0 +1,25 @@
+<%- include("partials/header")%>
+<!-- <link rel="stylesheet" href="app.css" /> -->
+<div class="ui main text container segment">
+  <div class="ui huge header">New Blog</div>
+
+  <form class="ui form" action="/blogs" method="POST">
+    <div class="field">
+      <label>Title</label>
+      <input type="text" name="blog[title]" placeholder="title" required />
+    </div>
+
+    
+   
+    <div class="field">
+      <label>Blog Content</label>
+      <textarea name="blog[body]" cols="30" rows="10" required></textarea>
+    </div>
+    <div class="field">
+      <input type="submit" class="ui secondary button" />
+      <a href="/blogs" class="ui button">Cancel</a>
+    </div>
+  </form>
+</div>
+
+<%- include("partials/footer") %>

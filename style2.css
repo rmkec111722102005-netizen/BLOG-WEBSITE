@@ -1,0 +1,29 @@
+/* style Sheet for Modal popUp Display */
+
+.modal-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+  }
+  
+  @keyframes drop {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: 50%;
+    }
+  }
+  .X {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  section {
+    transition: 1s;
+  }
